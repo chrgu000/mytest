@@ -1,0 +1,6 @@
+采集
+
+1.确定是否可以采集
+2.测试curl模式请求；
+
+uw-bonus-share/src/biz 分销奖励规则

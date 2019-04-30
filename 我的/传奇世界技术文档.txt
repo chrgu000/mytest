@@ -1,0 +1,41 @@
+
+  1.游戏开启：打开D:\CQSJ_Server，下面有1.phpstudy;2.bat;3.bat;4.bat;依次按步骤打开即可开启服务器游戏
+
+  2.修改登录页背景图片
+  修改 D:\CQSJ_Server\WWW\client\resource\ui2\ui_bg下的bg_index.jpg图片，把图片名称修改为bg_index即可
+  图片尺寸720*1280
+
+  3.修改人物初始属性：
+	打开：
+		CQSJ_Server\Server\node_modules\uw-user\src\biz\userBiz.js   修改324—363行代码
+		常需要修改的属性：
+            	/** 金币 **/
+            	userEntity.gold = 1000000;/*金币*/
+            	/** 总钻石  即元宝 **/
+            	userEntity.diamond = 10000000;/*钻石*/   
+             	/** 等级 **/
+            	userEntity.lvl = 145;/*等级(不同于英雄等级)*/
+           	/** VIP等级 **/
+            	userEntity.vip = 16;/*VIP等级*/ 
+           	/** 战力  战力是自动计算的，最好不要改 **/
+            	userEntity.combat = 0;/*战力*/
+           	/** 背包（只存放静态物品） **/ 
+  
+   4.修改公告D:\CQSJ_Server\WWW\WWW\client下的noctice.json文件，编辑内容时诸如此类标签不要删除或者覆盖 \r\n\r\n[ubb color=yellow] 
+   其中color = yellow 代表字体颜色
+
+   5.后台登录
+	账户:admin128,
+	密码：123456
+     可以新增账户密码，按规则提示注册即可
+
+   6.后台提现管理说明：
+	当有提现申请时会有记录显示：
+	当点击同意的时候，记录会消失，同时会减去玩家提现的元宝，会有邮件通知到游戏里面。vip0不可以提现，首次提现5000元宝
+	非首次间隔10天才可以提现，每次提现最低1000元宝。汇率比是1:10；
+   7.服务器管理，即开新服。暂不支持关服；
+   
+
+如有疑问，请联系技术。	
+	
+  

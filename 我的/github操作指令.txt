@@ -1,0 +1,16 @@
+
+
+1.git add  "需要上传的资料"
+
+2.git commit -m "上传描述(比如测试本地代码上传到github)"
+
+3. git push -u origin master （第一次上传时用，后面可以用git push origin master)
+
+4.把github上面的代码更新下载到本地    git clone 你的github地址；
+
+5.git remote -v 看关联与否
+
+6.git rm -r --cached 远程文件名
+  git commit -m"测试"
+
+完成本地删除远程指定文件
